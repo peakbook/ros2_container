@@ -1,0 +1,24 @@
+[begin] (Fluxbox)
+[encoding] {UTF-8}
+[exec] (terminal) {stterm}
+[submenu] (ROS)
+      [exec]   (rviz) {rviz2}
+      [exec]   (rqt) {rqt}
+[end]
+[submenu] (Editors)
+      [exec]   (vim) {stterm -e vim}
+[end]
+[submenu] (System Tools)
+      [exec]   (top) {stterm -e top}
+[end]
+[submenu] (Fluxbox menu)
+      [config] (Configure)
+      [submenu] (System Styles) {Choose a style...}
+            [stylesdir] (/usr/share/fluxbox/styles)
+      [end]
+      [workspaces] (Workspace List)
+      [commanddialog] (Fluxbox Command)
+      [reconfig] (Reload config)
+[end]
+[endencoding]
+[end]
